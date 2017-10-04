@@ -20,16 +20,16 @@ Some gifs demonstrating the magic
 
 ### Editing paragraphs settings & quick edit
 
-![](https://www.dropbox.com/s/aiivqhjvgmhy8fl/add-content.gif?raw=1)
+https://www.dropbox.com/s/qg640za04222lg4/settings%26quickedit.gif?raw=1
 
 ### Duplicating & moving paragraphs
-https://www.dropbox.com/s/wdqvxdki22jgph4/move%26duplicate.gif?dl=0
+https://www.dropbox.com/s/wdqvxdki22jgph4/move%26duplicate.gif?raw=1
 
 ### Adding paragraphs
-https://www.dropbox.com/s/aiivqhjvgmhy8fl/add-content.gif?dl=0
+https://www.dropbox.com/s/aiivqhjvgmhy8fl/add-content.gif?raw=1
 
 ### Using webforms with paragraphs
-https://www.dropbox.com/s/oo2prxw57835dka/webform.gif?dl=0
+https://www.dropbox.com/s/oo2prxw57835dka/webform.gif?raw=1
 
 
 ## Install
