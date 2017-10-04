@@ -1,0 +1,12 @@
+uuid: 13158261-b6e7-4ce4-aae3-7bc12e9b156e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Udo6MvkrGGPtdxW1zLqmOAR4zkfQoLqKXtYTtjIgfXA
+id: paragraph.content_align_left
+label: 'Content align left'
+targetEntityType: paragraph
+cache: true

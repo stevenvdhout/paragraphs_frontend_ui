@@ -1,0 +1,24 @@
+{
+    "name": "calibrate/paragraphs_frontend_ui",
+    "description": "POC For setting up paragraphs frontend editing",
+    "type": "drupal-module",
+    "keywords": ["Drupal 8","Paragraphs","Frontend UI"],
+    "homepage": "https://github.com/stevenvdhout/paragraphs_frontend_ui",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Steven Van den Hout",
+            "email": "steven.vandenhout@calibrate.be",
+            "homepage": "http://www.calibrate.be",
+            "role": "Drupal Lead"
+        }
+    ],
+    "require": {
+        "drupal/entity_reference_revisions": "^1.0",
+        "drupal/paragraphs": "~1.0",
+        "drupal/paragraphs_edit": "~2.0",
+        "drupal/paragraphs_browser": "*",
+        "drupal/view_mode_selector": "^1",
+        "drupal/ds": "~3.0"
+    }
+}

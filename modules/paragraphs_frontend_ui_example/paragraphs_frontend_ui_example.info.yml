@@ -1,0 +1,16 @@
+name: Paragraphs Frontend UI Example
+description: Enables an example for Paragraphs frontend ui.
+package: Paragraphs
+type: module
+core: 8.x
+version: '8.x-1.0'
+dependencies:
+  - paragraphs_frontend_ui
+  - text
+  - view_mode_selector
+  - field_group
+  - file
+  - image
+  - link
+  - options
+  - ds

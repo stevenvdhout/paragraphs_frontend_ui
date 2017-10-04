@@ -1,0 +1,25 @@
+uuid: 9910838f-e1a8-4cb2-b96f-209546934a0b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_width
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - options
+_core:
+  default_config_hash: x7n__4UmaJL6ewI-6h9GNtpMDOjnnyfsxy-4IwlUq9s
+id: paragraph.text_with_image.field_paragraph_width
+field_name: field_paragraph_width
+entity_type: paragraph
+bundle: text_with_image
+label: Width
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: full
+default_value_callback: ''
+settings: {  }
+field_type: list_string

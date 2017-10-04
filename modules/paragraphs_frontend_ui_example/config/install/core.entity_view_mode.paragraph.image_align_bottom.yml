@@ -1,0 +1,12 @@
+uuid: f8c967d2-999f-4344-a599-fed79e504f66
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: 7Mmsv0oOeayPbRG2KAGoG_Ic_BiYsJuENR_79JF_v58
+id: paragraph.image_align_bottom
+label: 'Image align bottom'
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,115 @@
+uuid: dcb973b8-3517-428d-8891-df4b519aaeb7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.image_align_bottom
+    - field.field.paragraph.text_with_image.field_background
+    - field.field.paragraph.text_with_image.field_border
+    - field.field.paragraph.text_with_image.field_image
+    - field.field.paragraph.text_with_image.field_paragraph_width
+    - field.field.paragraph.text_with_image.field_text
+    - field.field.paragraph.text_with_image.field_text_align
+    - field.field.paragraph.text_with_image.field_title
+    - field.field.paragraph.text_with_image.field_title_align
+    - field.field.paragraph.text_with_image.field_view_mode
+    - image.style.medium
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - ds
+    - field_group
+    - image
+    - text
+third_party_settings:
+  field_group:
+    group_title:
+      children: {  }
+      parent_name: ''
+      weight: 14
+      label: Title-group
+      format_type: html_element
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        effect: none
+        speed: fast
+        attributes: ''
+        classes: ''
+        id: ''
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_title
+        - field_subtitle
+        - field_text
+        - field_call_to_action
+        - field_image
+_core:
+  default_config_hash: MH-eaaHMm7o6b_tstDFtY_D_h5VgcqebYOxdYdflZfE
+id: paragraph.text_with_image.image_align_bottom
+targetEntityType: paragraph
+bundle: text_with_image
+mode: image_align_bottom
+content:
+  field_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+    region: ds_content
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: string
+    region: ds_content
+hidden:
+  created: true
+  field_background: true
+  field_border: true
+  field_paragraph_width: true
+  field_text_align: true
+  field_title_align: true
+  field_view_mode: true
+  uid: true

@@ -1,0 +1,142 @@
+uuid: 458ed067-219c-4d7c-9ea9-c3c8b5e1ad9d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.columns.field_background
+    - field.field.paragraph.columns.field_border
+    - field.field.paragraph.columns.field_paragraph
+    - field.field.paragraph.columns.field_paragraph_width
+    - field.field.paragraph.columns.field_text
+    - field.field.paragraph.columns.field_text_align
+    - field.field.paragraph.columns.field_title
+    - field.field.paragraph.columns.field_title_align
+    - paragraphs.paragraphs_type.columns
+  module:
+    - field_group
+    - paragraphs
+    - text
+third_party_settings:
+  field_group:
+    group_layout_settings:
+      children:
+        - field_paragraph_width
+        - field_background
+        - field_border
+        - field_title_align
+        - field_text_align
+      parent_name: ''
+      weight: 0
+      label: 'Layout settings'
+      format_type: details
+      format_settings:
+        label: 'Layout settings'
+        id: ''
+        classes: form-wrapper-layout-settings
+        open: false
+        required_fields: false
+    group_title_wrapper:
+      children:
+        - field_title_style
+        - field_title
+      parent_name: ''
+      weight: 1
+      label: 'Title wrapper'
+      format_type: html_element
+      format_settings:
+        label: 'Title wrapper'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'title-style-group clearfix'
+    group_subtitle_wrapper:
+      children:
+        - field_subtitle_style
+        - field_subtitle
+      parent_name: ''
+      weight: 2
+      label: 'Subtitle wrapper'
+      format_type: html_element
+      format_settings:
+        label: 'Subtitle wrapper'
+        element: div
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'title-style-group clearfix'
+_core:
+  default_config_hash: qTUXn2lbS4RA3lhi5DuUlgPXHJrnDu822cuSmMP_U-I
+id: paragraph.columns.default
+targetEntityType: paragraph
+bundle: columns
+mode: default
+content:
+  field_background:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_border:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_paragraph:
+    type: entity_reference_paragraphs
+    weight: 4
+    settings:
+      title: Paragraaf
+      title_plural: Paragrafen
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_paragraph_width:
+    type: options_select
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text_align:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_title:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_title_align:
+    type: options_select
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,4 @@
+paragraphs_frontend_ui.default:
+  title: 'Default content'
+  route_name: paragraphs_frontend_ui.default
+  base_route: entity.paragraphs_type.edit_form

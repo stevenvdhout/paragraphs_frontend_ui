@@ -1,0 +1,12 @@
+uuid: cea23eb8-30ac-481f-9dd3-562933cf16be
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ow2Lbf2fCf6u-HJXQKlp02uoVv6mvEPa73t3CXyJdcM
+id: paragraph.image_align_right
+label: 'Image align right'
+targetEntityType: paragraph
+cache: true

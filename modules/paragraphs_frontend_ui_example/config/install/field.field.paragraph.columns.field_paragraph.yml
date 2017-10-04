@@ -1,0 +1,34 @@
+uuid: 75d3f5bc-863d-46cb-a179-3f60f5be61b5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph
+    - paragraphs.paragraphs_type.columns
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: JmO5RLnmaqzDleNKRlaS5CexCHHDjJRB1bMW59wy2p4
+id: paragraph.columns.field_paragraph
+field_name: field_paragraph
+entity_type: paragraph
+bundle: columns
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      columns:
+        weight: -5
+        enabled: false
+      text_with_image:
+        weight: -5
+        enabled: false
+field_type: entity_reference_revisions

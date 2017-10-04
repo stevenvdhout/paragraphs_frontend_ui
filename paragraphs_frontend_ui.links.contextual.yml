@@ -1,0 +1,24 @@
+paragraphs_frontend_ui.edit_settings:
+  route_name: paragraphs_frontend_ui.edit_settings
+  group: paragraph
+  title: 'Edit settings'
+
+paragraphs_frontend_ui.move_up:
+  route_name: paragraphs_frontend_ui.up
+  group: paragraph
+  title: 'Move Up'
+
+paragraphs_frontend_ui.move_down:
+  route_name: paragraphs_frontend_ui.down
+  group: paragraph
+  title: 'Move Down'
+
+paragraphs_frontend_ui.duplicate:
+  route_name: paragraphs_frontend_ui.duplicate
+  group: paragraph
+  title: 'Duplicate'
+
+paragraphs_frontend_ui.add:
+  route_name: paragraphs_frontend_ui.add_select
+  group: paragraph
+  title: 'Add below'

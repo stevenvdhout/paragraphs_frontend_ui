@@ -1,0 +1,102 @@
+<?php
+
+use Drupal\Component\Utility\Html;
+use Drupal\paragraphs\ParagraphInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Render\Element;
+use Drupal\paragraphs_edit\Form\ParagraphEditForm;
+
+/**
+ * Implements hook_contextual_links_view_alter().
+ *
+ * Change some contextual links into off_canvas links.
+ */
+function paragraphs_frontend_ui_contextual_links_view_alter(&$element, $items) {
+
+  if (isset($element['#links']['paragraphs-editedit-form'])) {
+
+  	$element['#links']['paragraphs-editedit-form']['title'] = t('Edit content');
+
+    $element['#links']['paragraphs-editedit-form']['attributes'] = [
+      'class' => ['use-ajax'],
+      'data-dialog-type' => 'dialog',
+      'data-dialog-renderer' => 'modal',
+      'data-dialog-options' => json_encode(['width' => '50%']),
+    ];
+
+  }
+
+  // set the title for 'Clone' to 'Duplicate'
+  if (isset($element['#links']['paragraphs-editclone-form'])) {
+    unset($element['#links']['paragraphs-editclone-form']);
+  }
+
+  if (isset($element['#links']['paragraphs-editdelete-form'])) {
+
+    // open the delete form inside a modal
+    $element['#links']['paragraphs-editdelete-form']['attributes'] = [
+      'class' => ['use-ajax'],
+      'data-dialog-type' => 'dialog',
+      'data-dialog-renderer' => 'modal',
+    ];
+
+  }
+
+  if (isset($element['#links']['paragraphs-frontend-uiedit-settings'])) {
+    $element['#links']['paragraphs-frontend-uiedit-settings']['attributes'] = [
+      'class' => ['use-ajax'],
+      'data-dialog-type' => 'dialog',
+      'data-dialog-renderer' => 'off_canvas',
+      'data-outside-in-edit' => TRUE,
+    ];
+
+    $element['#attached']['library'][] = 'outside_in/drupal.off_canvas';
+  }
+  if (isset($element['#links']['paragraphs-frontend-uimove-up'])) {
+    $element['#links']['paragraphs-frontend-uimove-up']['attributes'] = [
+      'class' => ['use-ajax'],
+    ];
+  }
+  if (isset($element['#links']['paragraphs-frontend-uimove-down'])) {
+    $element['#links']['paragraphs-frontend-uimove-down']['attributes'] = [
+      'class' => ['use-ajax'],
+    ];
+  }
+  if (isset($element['#links']['paragraphs-frontend-uiduplicate'])) {
+    $element['#links']['paragraphs-frontend-uiduplicate']['attributes'] = [
+      'class' => ['use-ajax'],
+    ];
+  }
+  if (isset($element['#links']['paragraphs-frontend-uiadd'])) {
+    $element['#links']['paragraphs-frontend-uiadd']['attributes'] = [
+      'class' => ['use-ajax'],
+      'data-dialog-type' => 'dialog',
+      'data-dialog-renderer' => 'off_canvas',
+      'data-outside-in-edit' => TRUE,
+    ];
+  }
+  
+}
+
+/**
+ * Implements hook_entity_type_build().
+ * Register the settings form mode for paragraphs
+ *
+ * @param \Drupal\Core\Entity\EntityTypeInterface[] $entity_types
+ */
+function paragraphs_frontend_ui_entity_type_build(array &$entity_types) {
+  $entity_types['paragraph']->setFormClass('settings', ParagraphEditForm::class);
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Using hook_preprocess_field().
+ */
+function paragraphs_frontend_ui_preprocess_field(&$vars) {
+  if (empty($vars['field_type']) || $vars['field_type'] !== 'entity_reference_revisions') {
+    return;
+  }
+  $vars['attributes']['data-paragraphs-frontend-ui'] = $vars['field_name'] . '-' . $vars['element']['#object']->id();
+}

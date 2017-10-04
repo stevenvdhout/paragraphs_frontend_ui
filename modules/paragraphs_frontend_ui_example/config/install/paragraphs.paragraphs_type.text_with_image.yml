@@ -1,0 +1,17 @@
+uuid: dfa1d622-0ded-4c1a-8c9f-73eb761cd524
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs_browser
+third_party_settings:
+  paragraphs_browser:
+    description: 'Paragraph ''text with image'' can be used to fill the page with an image and paragraph texts. You can choose where to position the image.'
+    image_path: modules/calibrate/calibr8_paragraphs/img/text_with_image_left.png
+_core:
+  default_config_hash: 7HwJJe-16dF7LzGsQ6g_NcurIz29t0d-iQdiY4Y4Cmw
+id: text_with_image
+label: 'Text with image'
+icon_uuid: null
+description: null
+behavior_plugins: {  }

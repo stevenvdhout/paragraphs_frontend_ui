@@ -1,0 +1,12 @@
+uuid: 5ccd41b1-6892-49fe-a427-8099f767d2d1
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: tQ404dK3BP3dyaIiLbs048Z9UTjOVSQUJE6NmWY2bt0
+id: paragraph.view_mode_selector
+label: 'View mode selector'
+targetEntityType: paragraph
+cache: true

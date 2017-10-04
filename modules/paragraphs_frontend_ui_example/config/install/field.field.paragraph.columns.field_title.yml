@@ -1,0 +1,21 @@
+uuid: b12fd154-6d5f-4797-a3d4-66bc0e3094df
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.columns
+_core:
+  default_config_hash: yz0cHf58c0nynlUEwCuCdncGEvi0qcgI6atJzQo2sbc
+id: paragraph.columns.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: columns
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

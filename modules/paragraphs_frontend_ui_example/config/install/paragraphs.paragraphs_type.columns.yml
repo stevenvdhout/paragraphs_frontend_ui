@@ -1,0 +1,17 @@
+uuid: c56fdd5f-48cb-4d53-ad61-0ee3f95a0c8e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs_browser
+third_party_settings:
+  paragraphs_browser:
+    description: "Paragraph 'Columns' can be used to create a layout that equally divide the width with references to nodes, blocks, forms or 'text with image' paragraphs. \r\nLimited to four items."
+    image_path: modules/calibrate/calibr8_paragraphs/img/columns.png
+_core:
+  default_config_hash: LRw5-bElu7ny4xUXVguEFkq7emVTcqK20iywGh-lids
+id: columns
+label: Columns
+icon_uuid: null
+description: null
+behavior_plugins: {  }

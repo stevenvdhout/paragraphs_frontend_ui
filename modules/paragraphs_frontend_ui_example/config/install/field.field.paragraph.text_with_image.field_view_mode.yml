@@ -1,0 +1,46 @@
+uuid: 480c8dd3-87eb-4423-8a85-f5e52e85048f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_mode
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - view_mode_selector
+_core:
+  default_config_hash: coGKvjYTrg2QaDSi53K8Hmy3m_8lfEEFU-2vvBh47KE
+id: paragraph.text_with_image.field_view_mode
+field_name: field_view_mode
+entity_type: paragraph
+bundle: text_with_image
+label: 'View mode'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: image_align_left
+default_value_callback: ''
+settings:
+  view_modes:
+    default:
+      enable: 0
+      hide_title: 0
+      icon: {  }
+    image_align_bottom:
+      enable: 1
+      hide_title: 0
+      icon: {  }
+    image_align_left:
+      enable: 1
+      hide_title: 0
+      icon: {  }
+    image_align_right:
+      enable: 1
+      hide_title: 0
+      icon: {  }
+    image_align_top:
+      enable: 1
+      hide_title: 0
+      icon: {  }
+field_type: view_mode_selector

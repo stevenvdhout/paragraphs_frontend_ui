@@ -1,0 +1,91 @@
+paragraphs_frontend_ui.default:
+  path: '/admin/structure/paragraphs_type/{paragraphs_type}/browsers/default-content'
+  defaults:
+    _controller: '\Drupal\paragraphs_frontend_ui\Controller\ParagraphsFrontendUIController::defaultContent'
+    _title: 'Default content'
+  requirements:
+    _permission: 'administer paragraphs types'
+  options:
+    parameters:
+      paragraphs_type:
+        type: entity:paragraphs_type
+
+paragraphs_frontend_ui.edit_settings:
+  path: '/paragraphs/{root_parent_type}/{root_parent}/paragraphs/{paragraph}/edit'
+  defaults:
+    _entity_form: 'paragraph.settings'
+  requirements:
+    _entity_access: 'root_parent.update'
+    root_parent: \d+
+  options:
+    _admin_route: TRUE
+    parameters:
+      root_parent:
+        type: 'entity:{root_parent_type}'
+      paragraph:
+        type: 'entity:paragraph'
+
+paragraphs_frontend_ui.up:
+  path: '/paragraphs/{root_parent_type}/{root_parent}/paragraphs/{paragraph}/up'
+  defaults:
+    _title: 'Up'
+    _controller: '\Drupal\paragraphs_frontend_ui\Controller\ParagraphsFrontendUIController::up'
+  requirements:
+    _entity_access: 'root_parent.update'
+    root_parent: \d+
+    js: 'nojs|ajax'
+  options:
+    parameters:
+      root_parent:
+        type: 'entity:{root_parent_type}'
+      paragraph:
+        type: 'entity:paragraph'
+
+paragraphs_frontend_ui.down:
+  path: '/paragraphs/{root_parent_type}/{root_parent}/paragraphs/{paragraph}/down'
+  defaults:
+    _title: 'Down'
+    _controller: '\Drupal\paragraphs_frontend_ui\Controller\ParagraphsFrontendUIController::down'
+  requirements:
+    _entity_access: 'root_parent.update'
+    root_parent: \d+
+    js: 'nojs|ajax'
+  options:
+    parameters:
+      root_parent:
+        type: 'entity:{root_parent_type}'
+      paragraph:
+        type: 'entity:paragraph'
+
+paragraphs_frontend_ui.duplicate:
+  path: '/paragraphs/{root_parent_type}/{root_parent}/paragraphs/{paragraph}/duplicate'
+  defaults:
+    _title: 'Duplicate'
+    _controller: '\Drupal\paragraphs_frontend_ui\Controller\ParagraphsFrontendUIController::duplicate'
+  requirements:
+    _entity_access: 'root_parent.update'
+    root_parent: \d+
+    js: 'nojs|ajax'
+  options:
+    parameters:
+      root_parent:
+        type: 'entity:{root_parent_type}'
+      paragraph:
+        type: 'entity:paragraph'
+
+paragraphs_frontend_ui.add_select:
+  path: '/paragraphs/{root_parent_type}/{root_parent}/paragraphs/{paragraph}/select-type'
+  defaults:
+    _title: 'Select type'
+    _controller: '\Drupal\paragraphs_frontend_ui\Controller\ParagraphsFrontendUIController::selectType'
+  requirements:
+    _entity_access: 'root_parent.update'
+    root_parent: \d+
+    js: 'nojs|ajax'
+  options:
+    _admin_route: TRUE
+    parameters:
+      root_parent:
+        type: 'entity:{root_parent_type}'
+      paragraph:
+        type: 'entity:paragraph'

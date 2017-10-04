@@ -1,0 +1,12 @@
+uuid: d1921c64-fc71-4848-9910-fb9cc55ad2ff
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Nxwk03Gn9QB8mLpslyJUuMk4FdF_IBE634-WkgSe0ew
+id: paragraph.content_align_right
+label: 'Content align right'
+targetEntityType: paragraph
+cache: true
