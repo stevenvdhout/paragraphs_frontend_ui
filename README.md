@@ -19,7 +19,8 @@ The following features are currently available in the frontend trough contextual
 Some gifs demonstrating the magic
 
 ### Editing paragraphs settings & quick edit
-![alt text] (https://www.dropbox.com/s/qg640za04222lg4/settings%26quickedit.gif?raw=1 "Settings & Quickedit")
+
+![](https://www.dropbox.com/s/aiivqhjvgmhy8fl/add-content.gif?raw=1)
 
 ### Duplicating & moving paragraphs
 https://www.dropbox.com/s/wdqvxdki22jgph4/move%26duplicate.gif?dl=0
