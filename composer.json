@@ -1,5 +1,5 @@
 {
-    "name": "calibrate/paragraphs_frontend_ui",
+    "name": "stevenvdhout/paragraphs_frontend_ui",
     "description": "POC For setting up paragraphs frontend editing",
     "type": "drupal-module",
     "keywords": ["Drupal 8","Paragraphs","Frontend UI"],
