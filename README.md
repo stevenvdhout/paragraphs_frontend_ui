@@ -14,6 +14,22 @@ The following features are currently available in the frontend trough contextual
 * Duplicate paragraph items
 * Add a new item from a paragraph browser inside the settings tray
 
+## Screen recorings
+
+Some gifs demonstrating the magic
+
+### Editing paragraphs settings & quick edit
+https://www.dropbox.com/s/qg640za04222lg4/settings%26quickedit.gif?dl=0
+
+### Duplicating & moving paragraphs
+https://www.dropbox.com/s/wdqvxdki22jgph4/move%26duplicate.gif?dl=0
+
+### Adding paragraphs
+https://www.dropbox.com/s/aiivqhjvgmhy8fl/add-content.gif?dl=0
+
+### Using webforms with paragraphs
+https://www.dropbox.com/s/oo2prxw57835dka/webform.gif?dl=0
+
 
 ## Install
 
