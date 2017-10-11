@@ -7,6 +7,6 @@ version: '8.x-1.0'
 dependencies:
   - paragraphs
   - paragraphs_browser
-  - outside_in
+  - settings_tray
   - paragraphs_edit
   - quickedit

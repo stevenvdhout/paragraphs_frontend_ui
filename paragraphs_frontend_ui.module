@@ -20,8 +20,7 @@ function paragraphs_frontend_ui_contextual_links_view_alter(&$element, $items) {
 
     $element['#links']['paragraphs-editedit-form']['attributes'] = [
       'class' => ['use-ajax'],
-      'data-dialog-type' => 'dialog',
-      'data-dialog-renderer' => 'modal',
+      'data-dialog-type' => 'modal',
       'data-dialog-options' => json_encode(['width' => '50%']),
     ];
 
@@ -37,8 +36,7 @@ function paragraphs_frontend_ui_contextual_links_view_alter(&$element, $items) {
     // open the delete form inside a modal
     $element['#links']['paragraphs-editdelete-form']['attributes'] = [
       'class' => ['use-ajax'],
-      'data-dialog-type' => 'dialog',
-      'data-dialog-renderer' => 'modal',
+      'data-dialog-type' => 'modal',
     ];
 
   }
