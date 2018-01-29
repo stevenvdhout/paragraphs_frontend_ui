@@ -1,15 +1,3 @@
-paragraphs_frontend_ui.default:
-  path: '/admin/structure/paragraphs_type/{paragraphs_type}/browsers/default-content'
-  defaults:
-    _controller: '\Drupal\paragraphs_frontend_ui\Controller\ParagraphsFrontendUIController::defaultContent'
-    _title: 'Default content'
-  requirements:
-    _permission: 'administer paragraphs types'
-  options:
-    parameters:
-      paragraphs_type:
-        type: entity:paragraphs_type
-
 paragraphs_frontend_ui.edit_settings:
   path: '/paragraphs/{root_parent_type}/{root_parent}/paragraphs/{paragraph}/edit'
   defaults:

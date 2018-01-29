@@ -1,7 +1,7 @@
 
 # Paragraph set menu items definition
 entity.paragraph_set.collection:
-  title: 'Paragraph set'
+  title: 'Paragraph sets'
   route_name: entity.paragraph_set.collection
   description: 'List Paragraph set entities'
   parent: system.admin_structure

@@ -97,51 +97,10 @@ class ParagraphsFrontendUIController extends ControllerBase {
   /**
    * Select a paragraph type.
    */
-  public function selectType($paragraph, $js = 'nojs') {
-
-    extract($this->getParentData($paragraph));
-
-    $field_config = \Drupal::entityManager()->getStorage('field_config')->load("$parent_type.$parent_bundle.$parent_field_name");
-
-    // just use the first browser type for now
-    $browser_types = \Drupal::entityQuery('paragraphs_browser_type')->execute();
-    $browser = paragraphs_browser_type_load(key($browser_types));
-
-
-    $form = \Drupal::formBuilder()->getForm('Drupal\paragraphs_frontend_ui\Form\ParagraphsFrontendUIBrowserForm', $field_config, $browser, NULL, $paragraph);
-    return $form;
-
-  }
-
-  /**
-   * Select a paragraph type.
-   */
   public function addSet($paragraph, $js = 'nojs') {
     $form = \Drupal::formBuilder()->getForm('Drupal\paragraphs_frontend_ui\Form\ParagraphsFrontendUIAddSet', $paragraph);
     return $form;
 
-  }
-
-  /**
-   * Add a form for managing default content for a paragraph.
-   */
-  public function defaultContent($paragraphs_type) {
-
-    // get the default paragraph, or create a new one
-    $type = $paragraphs_type->id();
-    if ($paragraph_id = \Drupal::state()->get('paragraphs_frontend_ui_' . $type . '_default')) {
-      $paragraph = Paragraph::load($paragraph_id);
-    }
-    else {
-      $paragraph = Paragraph::create([
-      'type' => $type,
-      ]);
-      $paragraph->save();
-      \Drupal::state()->set('paragraphs_frontend_ui_' . $type . '_default', $paragraph->id());
-    }
-
-    $form = \Drupal::service('entity.form_builder')->getForm($paragraph, 'default');
-    return $form;
   }
 
   /**
