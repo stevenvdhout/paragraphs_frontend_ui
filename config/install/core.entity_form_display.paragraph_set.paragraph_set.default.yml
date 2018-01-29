@@ -1,0 +1,47 @@
+status: true
+dependencies:
+  config:
+    - field.field.paragraph_set.paragraph_set.field_image
+    - field.field.paragraph_set.paragraph_set.field_paragraph
+    - image.style.thumbnail
+  module:
+    - image
+    - paragraphs
+    - paragraphs_frontend_ui
+_core:
+  default_config_hash: xzm4N78morW5X1KrcO_sLck_8z8Adsg8Awab66IVX6c
+id: paragraph_set.paragraph_set.default
+targetEntityType: paragraph_set
+bundle: paragraph_set
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_paragraph:
+    type: entity_reference_paragraphs
+    weight: 3
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  user_id: true

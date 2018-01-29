@@ -1,0 +1,5 @@
+entity.paragraph_set.add_form:
+  route_name: entity.paragraph_set.add_form
+  title: 'Add Paragraph set'
+  appears_on:
+    - entity.paragraph_set.collection

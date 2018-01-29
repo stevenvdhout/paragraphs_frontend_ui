@@ -1,0 +1,47 @@
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph_set.field_paragraph
+  module:
+    - entity_reference_revisions
+    - paragraphs_frontend_ui
+_core:
+  default_config_hash: KD31kqwMouvBn28LPUaMr265bmAeGH-z4OHiQcSY_qQ
+id: paragraph_set.paragraph_set.field_paragraph
+field_name: field_paragraph
+entity_type: paragraph_set
+bundle: paragraph_set
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      block:
+        weight: 8
+        enabled: false
+      columns:
+        weight: 9
+        enabled: false
+      form:
+        weight: 10
+        enabled: false
+      links:
+        weight: 11
+        enabled: false
+      text:
+        weight: 12
+        enabled: false
+      text_with_background_image:
+        weight: 13
+        enabled: false
+      text_with_image:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

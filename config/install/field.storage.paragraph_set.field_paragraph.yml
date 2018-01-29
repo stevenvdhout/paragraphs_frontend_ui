@@ -1,0 +1,21 @@
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - paragraphs_frontend_ui
+_core:
+  default_config_hash: rQ9-WL8gPsupjCJvxZ0r0y3UrLfCs9Y1nhWSTt6lMRk
+id: paragraph_set.field_paragraph
+field_name: field_paragraph
+entity_type: paragraph_set
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

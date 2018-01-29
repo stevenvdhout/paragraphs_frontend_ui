@@ -1,0 +1,34 @@
+status: true
+dependencies:
+  config:
+    - field.field.paragraph_set.paragraph_set.field_image
+    - field.field.paragraph_set.paragraph_set.field_paragraph
+    - image.style.large
+  module:
+    - image
+    - paragraphs_frontend_ui
+_core:
+  default_config_hash: zyQYIs2Ykv6S0J332g2TwGcvaLjnkIiZQoFl2JUJI9k
+id: paragraph_set.paragraph_set.default
+targetEntityType: paragraph_set
+bundle: paragraph_set
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    type: image
+    region: content
+  name:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+hidden:
+  field_paragraph: true
+  user_id: true

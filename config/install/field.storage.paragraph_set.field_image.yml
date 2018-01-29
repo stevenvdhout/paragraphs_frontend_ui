@@ -1,0 +1,30 @@
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs_frontend_ui
+_core:
+  default_config_hash: WsUxHOVBOxf6-Oa304q6v96vQuDb9t2VJBWKZP8OV0Q
+id: paragraph_set.field_image
+field_name: field_image
+entity_type: paragraph_set
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

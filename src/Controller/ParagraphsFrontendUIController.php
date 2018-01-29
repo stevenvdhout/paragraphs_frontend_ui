@@ -114,6 +114,15 @@ class ParagraphsFrontendUIController extends ControllerBase {
   }
 
   /**
+   * Select a paragraph type.
+   */
+  public function addSet($paragraph, $js = 'nojs') {
+    $form = \Drupal::formBuilder()->getForm('Drupal\paragraphs_frontend_ui\Form\ParagraphsFrontendUIAddSet', $paragraph);
+    return $form;
+
+  }
+
+  /**
    * Add a form for managing default content for a paragraph.
    */
   public function defaultContent($paragraphs_type) {

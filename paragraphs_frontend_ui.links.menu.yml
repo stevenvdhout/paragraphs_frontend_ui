@@ -1,0 +1,14 @@
+
+# Paragraph set menu items definition
+entity.paragraph_set.collection:
+  title: 'Paragraph set'
+  route_name: entity.paragraph_set.collection
+  description: 'List Paragraph set entities'
+  parent: system.admin_structure
+  weight: 100
+
+paragraph_set.admin.structure.settings:
+  title: 'Paragraph set settings'
+  description: 'Configure Paragraph set entities'
+  route_name: paragraph_set.settings
+  parent: system.admin_structure

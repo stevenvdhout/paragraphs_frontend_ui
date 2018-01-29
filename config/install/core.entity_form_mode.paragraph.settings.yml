@@ -1,0 +1,10 @@
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: OgTEQTk6v6lIq9NyThqJXNDkG0ve1Q1LAzvTW5qTO_4
+id: paragraph.settings
+label: Settings
+targetEntityType: paragraph
+cache: true

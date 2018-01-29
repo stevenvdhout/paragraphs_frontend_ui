@@ -14,11 +14,7 @@
         }
     ],
     "require": {
-        "drupal/entity_reference_revisions": "^1.0",
         "drupal/paragraphs": "~1.0",
-        "drupal/paragraphs_edit": "~2.0",
-        "drupal/paragraphs_browser": "*",
-        "drupal/view_mode_selector": "^1",
-        "drupal/ds": "~3.0"
+        "drupal/paragraphs_edit": "~2.0"
     }
 }

@@ -6,7 +6,6 @@ core: 8.x
 version: '8.x-1.0'
 dependencies:
   - paragraphs
-  - paragraphs_browser
   - settings_tray
   - paragraphs_edit
   - quickedit

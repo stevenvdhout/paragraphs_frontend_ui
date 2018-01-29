@@ -1,0 +1,19 @@
+add paragraph set entities:
+  title: 'Create new Paragraph set entities'
+
+administer paragraph set entities:
+  title: 'Administer Paragraph set entities'
+  description: 'Allow to access the administration form to configure Paragraph set entities.'
+  restrict access: true
+
+delete paragraph set entities:
+  title: 'Delete Paragraph set entities'
+
+edit paragraph set entities:
+  title: 'Edit Paragraph set entities'
+
+view published paragraph set entities:
+  title: 'View published Paragraph set entities'
+
+view unpublished paragraph set entities:
+  title: 'View unpublished Paragraph set entities'
