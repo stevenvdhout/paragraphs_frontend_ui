@@ -4,7 +4,7 @@
     "type": "drupal-module",
     "keywords": ["Drupal 8","Paragraphs","Frontend UI"],
     "homepage": "https://github.com/stevenvdhout/paragraphs_frontend_ui",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0",
     "authors": [
         {
             "name": "Steven Van den Hout",
