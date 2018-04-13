@@ -9,23 +9,23 @@ dependencies:
     - paragraphs
     - paragraphs_frontend_ui
 _core:
-  default_config_hash: xzm4N78morW5X1KrcO_sLck_8z8Adsg8Awab66IVX6c
+  default_config_hash: 24M956ojwamT_E1FrYExRaSokMEsodrco28Kmsb9DU4
 id: paragraph_set.paragraph_set.default
 targetEntityType: paragraph_set
 bundle: paragraph_set
 mode: default
 content:
   field_image:
-    weight: 2
+    type: image_image
+    weight: 1
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_paragraph:
     type: entity_reference_paragraphs
-    weight: 3
+    weight: 2
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -44,4 +44,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  langcode: true
   user_id: true
