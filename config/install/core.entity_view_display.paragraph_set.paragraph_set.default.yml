@@ -5,11 +5,10 @@ dependencies:
     - field.field.paragraph_set.paragraph_set.field_paragraph
     - image.style.thumbnail
   module:
-    - ds
     - image
     - paragraphs_frontend_ui
 _core:
-  default_config_hash: dnHvi9Po504pO9LX2ZUAoMx3nI9Dm-9iS7RFxAwqtEM
+  default_config_hash: SY-rXpqF6A2ZX3D9Yo4pfLkneJ9j41SWNPDcjUwu8MY
 id: paragraph_set.paragraph_set.default
 targetEntityType: paragraph_set
 bundle: paragraph_set
@@ -23,14 +22,7 @@ content:
     settings:
       image_style: thumbnail
       image_link: ''
-    third_party_settings:
-      ds:
-        ft:
-          id: minimal
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+    third_party_settings: {  }
   name:
     type: string
     weight: 1
