@@ -7,6 +7,13 @@ use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
 use Drupal\Core\Render\Element;
 use Drupal\paragraphs_edit\Form\ParagraphEditForm;
 
+function paragraphs_frontend_ui_entity_view_alter(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display) {
+  if ($entity->getEntityTypeId() == 'paragraph') {
+    $build['#attached']['library'][] = 'paragraphs_frontend_ui/paragraphs-frontend-ui';
+  }
+
+}
+
 /**
  * Implements hook_contextual_links_view_alter().
  *

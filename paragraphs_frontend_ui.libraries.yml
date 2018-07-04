@@ -1,0 +1,5 @@
+paragraphs-frontend-ui:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs_frontend_ui.css: {}

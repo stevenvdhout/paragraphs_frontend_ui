@@ -64,7 +64,7 @@ paragraphs_frontend_ui.duplicate:
 paragraphs_frontend_ui.add_select:
   path: '/paragraphs/{root_parent_type}/{root_parent}/paragraphs/{paragraph}/select-type'
   defaults:
-    _title: 'Select type'
+    _title: 'Add a paragraph below'
     _controller: '\Drupal\paragraphs_frontend_ui\Controller\ParagraphsFrontendUIController::addSet'
   requirements:
     _entity_access: 'root_parent.update'

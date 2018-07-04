@@ -3,6 +3,7 @@ namespace Drupal\paragraphs_frontend_ui\Form;
 
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 use Drupal\paragraphs_frontend_ui\ParagraphSetListBuilder;
 use Drupal\paragraphs_frontend_ui\Entity\ParagraphSet;
 use Drupal\paragraphs\Entity\Paragraph;
@@ -10,6 +11,7 @@ use Drupal\Core\Ajax\ReplaceCommand;
 use Drupal\Core\Ajax\AjaxResponse;
 use Drupal\Core\Ajax\CloseModalDialogCommand;
 use Drupal\Core\Ajax\CloseDialogCommand;
+use Drupal\user\Entity\User;
 
 /**
  * Class CleanupUrlAliases.
@@ -33,6 +35,13 @@ class ParagraphsFrontendUIAddSet extends FormBase {
     // render the sets
     $sets = \Drupal::entityTypeManager()->getListBuilder('paragraph_set')->load();
     $view_builder = \Drupal::entityTypeManager()->getViewBuilder('paragraph_set');
+    if (empty($sets)) {
+      $form['empty_text'] = [
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => $this->t('You have not created any paragraph sets.'),
+      ];
+    }
     foreach ($sets as $set) {
       $form['sets'][$set->id()] = [
         '#type' => 'container',
@@ -46,6 +55,16 @@ class ParagraphsFrontendUIAddSet extends FormBase {
           'callback' => array(get_class($this), 'addMoreAjax'),
           'effect' => 'fade',
         ),
+      ];
+    }
+
+    $user = \Drupal::currentUser();
+
+    if ($user->hasPermission('add paragraph set entities')) {
+      $form['add_set'] = [
+        '#type' => 'link',
+        '#title' => $this->t('Add a new set'),
+        '#url' => Url::fromRoute('entity.paragraph_set.add_form'),
       ];
     }
 

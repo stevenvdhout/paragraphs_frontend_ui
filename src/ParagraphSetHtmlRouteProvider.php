@@ -40,7 +40,7 @@ class ParagraphSetHtmlRouteProvider extends AdminHtmlRouteProvider {
    */
   protected function getSettingsFormRoute(EntityTypeInterface $entity_type) {
     if (!$entity_type->getBundleEntityType()) {
-      $route = new Route("/admin/structure/{$entity_type->id()}");
+      $route = new Route("/admin/structure/{$entity_type->id()}/manage");
       $route
         ->setDefaults([
           '_title' => "{$entity_type->getLabel()}",

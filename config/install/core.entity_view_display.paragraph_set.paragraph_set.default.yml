@@ -5,7 +5,6 @@ dependencies:
     - field.field.paragraph_set.paragraph_set.field_paragraph
     - image.style.thumbnail
   module:
-    - ds
     - image
     - paragraphs_frontend_ui
 _core:
@@ -21,16 +20,9 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: large
       image_link: ''
-    third_party_settings:
-      ds:
-        ft:
-          id: minimal
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+    third_party_settings: {  }
   name:
     type: string
     weight: 1
